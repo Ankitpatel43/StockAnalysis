@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Dynamics Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Stock Analysis</p>
+          <h1>Company Supply & Demand Intelligence</h1>
+          <p class="subtitle">
+            Evaluate earnings surprise, bottlenecks, management execution, and growth
+            forecasts in one unified view.
+          </p>
+        </div>
+        <div class="search">
+          <label for="ticker">Company</label>
+          <select id="ticker"></select>
+          <div class="summary-card" id="company-summary"></div>
+        </div>
+      </header>
+
+      <section class="kpi-grid" id="kpis"></section>
+
+      <section class="grid two-column">
+        <article class="card">
+          <h2>Earnings Surprise</h2>
+          <p class="section-subtitle">
+            Recent quarters vs. analyst expectations with rolling surprise trend.
+          </p>
+          <div id="earnings"></div>
+        </article>
+        <article class="card">
+          <h2>Supply & Demand Dynamics</h2>
+          <p class="section-subtitle">
+            Market demand, capacity, and pricing signals driving growth outlook.
+          </p>
+          <div id="supply-demand"></div>
+        </article>
+      </section>
+
+      <section class="grid two-column">
+        <article class="card">
+          <h2>Bottleneck Score</h2>
+          <p class="section-subtitle">
+            Measures supply constraint severity and operational choke points.
+          </p>
+          <div id="bottleneck"></div>
+        </article>
+        <article class="card">
+          <h2>Forecast Growth</h2>
+          <p class="section-subtitle">
+            Scenario-based projections derived from supply/demand signals.
+          </p>
+          <div id="forecast"></div>
+        </article>
+      </section>
+
+      <section class="grid two-column">
+        <article class="card">
+          <h2>Management Guidance</h2>
+          <p class="section-subtitle">
+            Latest guidance vs. prior outlook, with qualitative highlights.
+          </p>
+          <div id="guidance"></div>
+        </article>
+        <article class="card">
+          <h2>Management Execution Score</h2>
+          <p class="section-subtitle">
+            Historical alignment between promises and delivery.
+          </p>
+          <div id="execution"></div>
+        </article>
+      </section>
+
+      <section class="card insights">
+        <h2>Key Insights</h2>
+        <ul id="insights"></ul>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
